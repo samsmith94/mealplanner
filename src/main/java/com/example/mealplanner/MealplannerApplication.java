@@ -5,6 +5,8 @@ import com.example.mealplanner.model.MeasurementUnit;
 import com.example.mealplanner.model.Unit;
 import com.example.mealplanner.repository.IngredientRepository;
 import com.example.mealplanner.repository.MeasurementUnitRepository;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -18,6 +20,8 @@ import java.util.Arrays;
 @SpringBootApplication
 @RestController
 public class MealplannerApplication {
+
+
 
 	public static void main(String[] args) {
 		SpringApplication.run(MealplannerApplication.class, args);
