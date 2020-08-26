@@ -38,7 +38,8 @@ public class RecipeService {
     }
 
     public RecipeDTO addNewRecipe(RecipeDTO recipeDTO) {
-        return this.convertToRecipeToDTO(recipeRepository.save(this.convertToRecipe(recipeDTO)));
+        Recipe recipe = this.convertToRecipe(recipeDTO);
+        return this.convertToRecipeToDTO(recipeRepository.save(recipe));
     }
 
 }

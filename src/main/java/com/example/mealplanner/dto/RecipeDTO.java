@@ -26,6 +26,9 @@ public class RecipeDTO {
     private String createdBy;
     private String instructions;
 
-    //private List<IngredientDTO> comments = new ArrayList<>();
+    //private List<IngredientDTO> ingredients = new ArrayList<>();
 
 }
+
+
+//legfaszább ötlet: nem is recipe + ingredientet kell posztolni, hanem a RecipeIngredientet!!!! arra kéne DTO
