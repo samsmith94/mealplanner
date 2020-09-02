@@ -42,9 +42,12 @@ public class MealplannerApplication {
 	@Bean
 	public CommandLineRunner loadData(IngredientRepository ingredientRepository, MeasurementUnitRepository measurementUnitRepository) {
 		return (args) -> {
+			/*
 			ingredientRepository.save(new Ingredient("Burgonya (főtt)", "Zöldségek", 18.2, 1.7, 0.1, 86.0, 58.0));
 			ingredientRepository.save(new Ingredient("Cukkini", "Zöldségek", 2.5, 1.2, 0.3, 17, 55));
 			ingredientRepository.save(new Ingredient("Alma", "Gyümöcsök", 11.4, 0.3, 0.2, 52, 38));
+			*/
+
 			//name, category, carbohydrate, protein, fat, calories, gi
 
 			/*

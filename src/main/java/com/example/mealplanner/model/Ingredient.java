@@ -18,16 +18,11 @@ public class Ingredient {
     @Column(name = "ingredient_id")
     private Long id;
 
-    @Column(name = "name")
+    @Column()
     private String name;
 
-    //name, category, carbohydrate, protein, fat, calories, gi
-    //"Burgonya (főtt)", "Zöldségek", 18.2, 1.7, 0.1, 86, 58
     @Column()
-    private String category;
-
-    @Column()
-    private Double carbohydrate;
+    private Double calories;
 
     @Column()
     private Double protein;
@@ -36,18 +31,25 @@ public class Ingredient {
     private Double fat;
 
     @Column()
-    private Double calories;
+    private Double carbohydrate;
 
-    @Column(name = "GI")
-    private Double gi;
+    @Column()
+    private String gi;
 
-    public Ingredient(String name, String category, double carbohydrate, double protein, double fat, double calories, double gi) {
+    @Column()
+    private String category;
+
+    @Column()
+    private String subcategory;
+
+    public Ingredient(String name, double calories, double protein, double fat, double carbohydrate, String gi, String category, String subcategory) {
         this.name = name;
-        this.category = category;
-        this.carbohydrate = carbohydrate;
+        this.calories = calories;
         this.protein = protein;
         this.fat = fat;
-        this.calories = calories;
+        this.carbohydrate = carbohydrate;
         this.gi = gi;
+        this.category = category;
+        this.subcategory = subcategory;
     }
 }
