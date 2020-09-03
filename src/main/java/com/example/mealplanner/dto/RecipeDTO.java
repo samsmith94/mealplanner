@@ -19,12 +19,14 @@ import java.util.List;
 //@JsonIgnoreProperties(value = { "id" })
 public class RecipeDTO {
 
-    @JsonProperty(access = JsonProperty.Access.READ_ONLY)
+    //@JsonProperty(access = JsonProperty.Access.READ_ONLY)
     private Long id;
     private String category;
     private String cuisine;
     private String createdBy;
     private String instructions;
+
+    private List<AddIngredientToRecipeDTO> ingredients = new ArrayList<>();
 
     //private List<IngredientDTO> ingredients = new ArrayList<>();
 
